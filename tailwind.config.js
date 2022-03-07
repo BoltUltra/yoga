@@ -19,11 +19,12 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        ubuntu: ["Ubuntu", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
-        background: "#E5E5E5",
+        background: "#C6BDBE",
         primary: "#4F282D",
+        list: "rgba(79, 40, 45, 0.11)",
       },
     },
   },
