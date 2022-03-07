@@ -19,52 +19,86 @@
 </head>
 
 <body class="bg-background font-roboto text-base text-primary">
-    <section class="">
+    <section class="mb-5" id="Home">
 
-        <div class="grid grid-cols-2 text-xs md:text-sm pl-5 ">
+        <div class="grid grid-cols-2 text-xs md:text-sm pl-5">
             <div class="">
-                <div class="flex items-center justify-between pt-10">
-                    <a href="index.html">
-                        <img src="./assets/favicon.png" class="w-10" alt="">
-                    </a>
+                <div class="">
+                    <div class="flex items-center justify-between pt-2 md:pt-10">
+                        <a href="index.html">
+                            <img src="./assets/favicon.png" class="w-6 md:w-10" alt="">
+                        </a>
 
-                    <!-- Mobile View -->
-                    <div class="">
-                        <ul class="flex space-x-4">
-                            <li class="list">Home</li>
-                            <li class="list">Class</li>
-                            <li class="list">Premium</li>
-                            <li class="list">Contact</li>
-                        </ul>
-                        <ul class="md:hidden">
-                            <li class="">Home</li>
-                            <li class="">Class</li>
-                            <li class="">Premium</li>
-                            <li class="">Contact</li>
+                        <div class="">
+                            <ul class="hidden md:flex space-x-4">
+                                <a href="">
+                                    <li class="list">Home</li>
+                                </a>
+                                <a href="">
+                                    <li class="list">Class</li>
+                                </a>
+                                <a href="">
+                                    <li class="list">Premium</li>
+                                </a>
+                                <a href="">
+                                    <li class="list">Contact</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <!-- Mobile View -->
+                        <div class="md:hidden">
+                            <button class="mobile-menu-button">
+                                <svg class="w-5 h-7 bg-primary rounded text-white" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:hidden hidden absolute mobile-menu space-y-5 bg-primary text-white pl-2 w-1/2">
+                        <ul class="space-y-4">
+                            <a href="">
+                                <li class="">Home</li>
+                            </a>
+                            <a href="">
+                                <li class="">Class</li>
+                            </a>
+                            <a href="">
+                                <li class="">Premium</li>
+                            </a>
+                            <a href="">
+                                <li class="">Contact</li>
+                            </a>
                         </ul>
                     </div>
                 </div>
-                <h1>Yoga</h1>
-                <span>Summer Class</span>
+                <h1 class="mt-5 text-4xl font-bold -mb-2 uppercase">Yoga</h1>
+                <span class="text-[10px] uppercase font-light">Summer Class</span>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eligendi facilis dolorum tenetur
+                <p class="text-[10px] leading-snug hidden md:block"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Dolore
+                    eligendi
+                    facilis
+                    dolorum tenetur
                     nihil
                     magni, fuga reprehenderit sed fugiat.</p>
 
-                <button>Start today</button>
+                <button class="block button mt-5 ">Start
+                    today</button>
 
             </div>
             <div>
-                <img src="./assets/yoga1.png" alt="">
+                <img src="./assets/yoga1.png" alt="" class="">
             </div>
         </div>
     </section>
 
     <section>
-        <div class="grid grid-cols-2">
+        <div class="grid md:grid-cols-2 px-5">
             <div>
-                <h2>Classes</h2>
-                <p>Lorem ipsum dolor sit amet, consect
+                <h2 class="py-5 font-bold text-3xl">Classes</h2>
+                <p class="text-xs py-2">Lorem ipsum dolor sit amet, consect
                     etur adipiscing elit. Nam sagittis duij
                     odio, a sagittis dui condimentum.</p>
                 <img src="./assets/big-grid.png" alt="">
@@ -122,6 +156,16 @@
         </div>
     </section>
 
+    <script>
+        // mobile menu
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // mobile menu event listeners
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
