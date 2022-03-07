@@ -7,5 +7,5 @@
 }
 
 .button {
-  @apply py-2 px-5 text-white bg-primary rounded-full hover:bg-list hover:text-primary;
+  @apply py-1 px-5 text-white bg-primary rounded-full hover:bg-list hover:text-primary;
 }
