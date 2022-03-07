@@ -19,9 +19,9 @@
 </head>
 
 <body class="bg-background font-roboto text-base text-primary">
-    <section class="mb-5" id="Home">
+    <section class="mb-5" id="home">
 
-        <div class="grid grid-cols-2 text-xs md:text-sm pl-5">
+        <div class="grid grid-cols-2 text-xs md:text-sm pl-5 md:pl-20">
             <div class="">
                 <div class="">
                     <div class="flex items-center justify-between pt-2 md:pt-10">
@@ -31,21 +31,21 @@
 
                         <div class="">
                             <ul class="hidden md:flex space-x-4">
-                                <a href="">
+                                <a href="#home">
                                     <li class="list">Home</li>
                                 </a>
-                                <a href="">
+                                <a href="#classes">
                                     <li class="list">Class</li>
                                 </a>
-                                <a href="">
+                                <a href="#premium">
                                     <li class="list">Premium</li>
                                 </a>
-                                <a href="">
+                                <a href="#contact">
                                     <li class="list">Contact</li>
                                 </a>
                             </ul>
                         </div>
-                        <!-- Mobile View -->
+                        <!-- Mobile View Button -->
                         <div class="md:hidden">
                             <button class="mobile-menu-button">
                                 <svg class="w-5 h-7 bg-primary rounded text-white" xmlns="http://www.w3.org/2000/svg"
@@ -56,27 +56,31 @@
                             </button>
                         </div>
                     </div>
+
+                    <!-- Mobile View -->
                     <div class="md:hidden hidden absolute mobile-menu space-y-5 bg-primary text-white pl-2 w-1/2">
                         <ul class="space-y-4">
-                            <a href="">
+                            <a href="#home">
                                 <li class="">Home</li>
                             </a>
-                            <a href="">
+                            <a href="#classes">
                                 <li class="">Class</li>
                             </a>
-                            <a href="">
+                            <a href="#premium">
                                 <li class="">Premium</li>
                             </a>
-                            <a href="">
+                            <a href="contact">
                                 <li class="">Contact</li>
                             </a>
                         </ul>
                     </div>
                 </div>
-                <h1 class="mt-5 text-4xl font-bold -mb-2 uppercase">Yoga</h1>
-                <span class="text-[10px] uppercase font-light">Summer Class</span>
+                <h1 class="mt-5 md:mt-28 text-4xl md:text-9xl font-bold -mb-2 uppercase">Yoga</h1>
+                <span class="text-[10px] md:text-xl md:ml-3 uppercase font-light">Summer Class</span>
 
-                <p class="text-[10px] leading-snug hidden md:block"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                <p class="text-[10px] md:text-xl mt-7 leading-snug hidden md:block"> Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing
                     elit. Dolore
                     eligendi
                     facilis
@@ -84,7 +88,7 @@
                     nihil
                     magni, fuga reprehenderit sed fugiat.</p>
 
-                <button class="block button mt-5 ">Start
+                <button class="block button mt-5 md:mt-8">Start
                     today</button>
 
             </div>
@@ -94,69 +98,120 @@
         </div>
     </section>
 
-    <section>
-        <div class="grid md:grid-cols-2 px-5">
+    <section id="classes">
+        <h2 class="heading-3 px-5 md:px-20">Classes</h2>
+        <div class="grid md:grid-cols-2 gap-x-5 px-5 md:px-20">
             <div>
-                <h2 class="py-5 font-bold text-3xl">Classes</h2>
-                <p class="text-xs py-2">Lorem ipsum dolor sit amet, consect
+                <p class="paragraph">Lorem ipsum dolor sit amet, consect
                     etur adipiscing elit. Nam sagittis duij
                     odio, a sagittis dui condimentum.</p>
-                <img src="./assets/big-grid.png" alt="">
+                <img src="./assets/big-grid.png" alt="" class="md:w-4/5 md:mt-14">
                 <p class="py-3 text-xs font-semibold">Tutor: Kehinde Gbemisola</p>
             </div>
             <div>
                 <div class="grid grid-cols-2 gap-x-2 gap-y-2">
-                    <div><img src="./assets/yoga2.png" alt=""></div>
-                    <div><img src="./assets/yoga3.png" alt=""></div>
-                    <div><img src="./assets/yoga4.png" alt=""></div>
-                    <div><img src="./assets/yoga5.png" alt=""></div>
+                    <div class="relative">
+                        <img src="./assets/yoga13.png" alt="" class="rounded-xl">
+                        <span class="premium">Vinyasa Yoga⭐</span>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/yoga3.png" alt="" class="rounded-xl">
+                        <span class="premium">Hatha Yoga⭐</span>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/yoga4.png" alt="" class="rounded-xl">
+                        <span class="premium">Yenga Yoga⭐</span>
+                    </div>
+                    <div class="relative">
+                        <img src="./assets/yoga5.png" alt="" class="rounded-xl">
+                        <span class="premium">Hatha Yoga⭐</span>
+                    </div>
                 </div>
-                <div></div>
-                <button class="button text-center mt-3">Register</button>
+                <div class="btn-div">
+
+                    <button class="button text-center mt-3 m-auto"><i
+                            class="fa-solid fa-graduation-cap mr-3"></i>Register</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2>Premium</h2>
-        <p>Lorem ipsum dolor sit amet, consect
-            etur adipiscing elit. Nam sagittis duij
-            odio, a sagittis dui condimentum.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
-            <img src="./assets/yoga6.png" alt="">
-            <img src="./assets/yoga7.png" alt="">
-            <img src="./assets/yoga8.png" alt="">
-            <img src="./assets/yoga9.png" alt="">
-            <img src="./assets/yoga10.png" alt="">
-            <img src="./assets/yoga11.png" alt="">
-            <img src="./assets/yoga12.png" alt="">
-            <img src="./assets/yoga13.png" alt="">
-        </div>
-        <button>Unlock All</button>
-    </section>
-
-    <section>
-        <h2>Contact All</h2>
-        <div class="flex justify-between">
-            <div>
-                <p>Lorem ipsum dolor sit amet, consect
-                    etur adipiscing elit. Nam sagittis duij
-                    odio, a sagittis dui condimentum .</p>
+    <section id="premium">
+        <div class="px-5 md:px-20">
+            <h2 class="heading-3">Premium <i class="fa-solid fa-trophy ml-2"></i></h2>
+            <p class="paragraph md:pr-[40rem]">Lorem ipsum dolor sit amet, consect
+                etur adipiscing elit. Nam sagittis duij
+                odio, a sagittis dui condimentum.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
+                <img src="./assets/yoga6.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga7.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga8.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga9.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga10.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga11.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga12.png" alt="" class="rounded-lg">
+                <img src="./assets/yoga13.png" alt="" class="rounded-lg">
             </div>
-            <div>
-                <ul>
-                    <li>+2341265894785</li>
-                    <li>janedo@example.com</li>
-                    <li>4, Jane Doe Street</li>
-                </ul>
+            <div class="btn-div">
+                <button class="button mt-5">Unlock All</button>
             </div>
-        </div>
-        <div>
-            <h4>Follow Us</h4>
-
         </div>
     </section>
 
+    <section id="contact">
+        <div class="px-5 md:px-20">
+            <h2 class="heading-3">Contact</h2>
+            <div class="md:flex md:justify-between">
+                <div class="">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consect
+                        etur adipiscing elit. Nam sagittis duij
+                        odio, a sagittis dui condimentum .</p>
+                </div>
+                <div class="">
+                    <ul class="paragraph">
+                        <div>
+                            <i class="fa-solid fa-phone mr-1"></i>
+                            <li class="inline">+2341265894785</li>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope mr-1"></i>
+                            <li class="inline">janedo@example.com</li>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot mr-1"></i>
+                            <li class="inline">4, Jane Doe Street</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <h4 class="py-2 text-xl">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="bg-list mx-5 md:mx-32 rounded-lg p-3 md:p-10">
+            <h4 class="py-2 text-lg text-center">Get In Touch With Us</h4>
+            <form action="#" class="">
+                <input type="text" name="" id="" placeholder="Name" class="input">
+                <input type="email" name="" id="" placeholder="Email" class="input">
+                <textarea name="" id="" cols="" rows="10" placeholder="Leave a message" class="input"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <footer class="mt-5 bg-primary text-white text-[10px] font-light py-2 text-center">
+        <p>Designed by Kehinde Gbemisole | Coded by Mayowa</p>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/caed22f575.js" crossorigin="anonymous"></script>
     <script>
         // mobile menu
         const btn = document.querySelector("button.mobile-menu-button");
