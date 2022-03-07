@@ -22,11 +22,8 @@ module.exports = {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       colors: {
-        background: "#EFF0F3",
-        button: "#BA723D",
-        lightbg: "#FDEBDD",
-        paragraph: "#2A2A2A",
-        headline: "#0D0D0D",
+        background: "#E5E5E5",
+        primary: "#4F282D",
       },
     },
   },
